@@ -25,17 +25,23 @@
 
 // console.log(oddIndices(arr), '\n');
 
+let arr = [1, 2, 3];
 
 function firstHalf(arr) {
     // Return an array containing the first half of an array
     // Include middle index on odd length arr
     // Your code here
     let firstHalf = [];
-    for(let i = 0; i <= (arr.length / 2) -1; i++){
+    let midleIndex = Math.floor(arr.length/2)
+    //console.log("This is math.floor"+midleIndex)
+//console.log(`mid index ${midleIndex}`);
+    for(let i = 0; i <= midleIndex; i++){
+        //console.log(arr[i]);
         firstHalf.push(arr[i]);
     }
+    //console.log(firstHalf)
     return firstHalf
 }
 
-let arr = [1, 2, 3, 4, 5, 6 ,7, 8, 9];
+
 console.log(firstHalf(arr), '\n');

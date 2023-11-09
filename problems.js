@@ -40,22 +40,30 @@ function nthPower(arr, n) {
 }
 
 function firstHalf(arr) {
-    // Return an array containing the first half of an array
+      // Return an array containing the first half of an array
     // Include middle index on odd length arr
     // Your code here
     let firstHalf = [];
-    for(let i = 0; i <= (arr.length / 2); i++){
+    let midleIndex = Math.ceil(arr.length/2)
+    //console.log("This is math.floor"+midleIndex)
+//console.log(`mid index ${midleIndex}`);
+    for(let i = 0; i <midleIndex; i++){
+        //console.log(arr[i]);
         firstHalf.push(arr[i]);
     }
+    console.log(firstHalf)
     return firstHalf
 }
+
 
 function secondHalf(arr) {
     // Return an array containing the second half of an array
     // Exclude middle index on odd length arr
     // Your code here
     let secHalf = [];
-    for(i = (arr.length /2)-1; i < arr.length; i++){
+    let startIndex = Math.ceil(arr.length/2)
+
+    for(i = startIndex; i < arr.length; i++){
         secHalf.push(arr[i])
     }
     return secHalf;

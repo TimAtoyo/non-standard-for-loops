@@ -12,7 +12,6 @@ describe("Problems", function () {
             expect(oddIndices([1, 2, 3])).to.deep.equal([2]);
             expect(oddIndices([1, 2, 3, 4])).to.deep.equal([2, 4]);
         });
-        
 
     })
 
